@@ -128,17 +128,27 @@ body {
 .header-icon {
   width: 16px;
   height: 16px;
-  fill: #757575;
-}
-.header-icon-conteiner {
+  fill: currentColor;
   margin-right: 10px;
+}
+
+.current,
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
+}
+
+.header-link:focus,
+.header-link:hover {
+  color: #2196f3;
 }
 
 /* -------------------------hero--------------------------------------- */
 .hero {
   background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/back.png);
+  background-image: url(./images/backg/back.png),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -455,6 +465,10 @@ body {
   margin-left: 460px;
 }
 
+.footer-social-portfolio {
+  margin-left: 70px;
+}
+
 .footer-social-text {
   font-weight: bold;
   font-size: 14px;
@@ -527,6 +541,7 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eee;
+  cursor: pointer;
 }
 
 .portfolio-list-item:hover {
@@ -555,17 +570,6 @@ body {
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.current,
-.nav-link:hover,
-.nav-link:focus {
-  color: #2196f3;
-}
-
-.header-link:focus,
-.header-link:hover {
-  color: #2196f3;
 }
 
 .portfolio-title {
